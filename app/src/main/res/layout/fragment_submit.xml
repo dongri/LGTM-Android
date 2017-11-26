@@ -1,43 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contactViewScrollView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
-    <EditText
-        android:id="@+id/plain_text_input"
-        android:layout_height="60dp"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:padding="5dp"
-        android:inputType="text"
-        android:hint="Image URL"/>
-
-    <Button
-        android:id="@+id/button_submit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Submit" />
-
-    <Button
-        android:id="@+id/button_camera"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Camera" />
-
-    <Button
-        android:id="@+id/button_upload"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Upload" />
-
-    <ImageView
-        android:id="@+id/item_image"
-        android:scaleType="fitCenter"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        />
+        android:layout_height="match_parent">
 
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/plain_text_input"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:inputType="text"
+            android:hint="Image URL"/>
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/button_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Camera" />
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <Button
+            android:id="@+id/button_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload" />
+
+    </LinearLayout>
+
+</ScrollView>
