@@ -73,7 +73,7 @@ public class HomeFragment extends Fragment implements
             }
             public void onScroll(AbsListView view, int firstVisibleItem,
                                  int visibleItemCount, int totalItemCount) {
-                if(firstVisibleItem+visibleItemCount == totalItemCount && totalItemCount!=0) {
+                if(firstVisibleItem+visibleItemCount == totalItemCount && totalItemCount != 0 && firstVisibleItem != 0) {
                     if(flag_loading == false) {
                         flag_loading = true;
                         page++;
