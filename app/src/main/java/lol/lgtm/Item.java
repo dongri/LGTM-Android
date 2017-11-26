@@ -1,17 +1,13 @@
 package lol.lgtm;
 
-import android.graphics.Bitmap;
-
 /**
  * Created by dongri on 2017/11/26.
  */
 
 public class Item {
 
-    private String url;
-
     private int id;
-
+    private String url;
 
     public int getId() {
         return id;
