@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
                     fragment = new HomeFragment();
                     break;
                 case R.id.navigation_dashboard:
-                    fragment = new RandomFragment();
+                    fragment = new SubmitFragment();
                     break;
             }
             final FragmentTransaction transaction = fragmentManager.beginTransaction();
