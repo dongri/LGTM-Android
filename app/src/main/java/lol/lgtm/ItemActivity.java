@@ -40,7 +40,7 @@ public class ItemActivity extends AppCompatActivity {
 
         imageView = (ResizableImageView)findViewById(R.id.item_image);
 
-        String data = intent.getDataString(); // https://lgtm.lol/i/234 | lgtm://i/234
+        String data = intent.getDataString(); // https://lgtm.lol/i/234 | lgtm://item/234
         if (data != null) {
             String pathId = data.substring(data.lastIndexOf("/") + 1); // 234
             itemId = Integer.valueOf(pathId);
