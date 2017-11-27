@@ -1,53 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_marginBottom="60dp"
     >
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="46dp"
+        >
 
-
-        <EditText
-            android:id="@+id/plain_text_input"
-            android:layout_height="60dp"
-            android:layout_width="match_parent"
-            android:padding="5dp"
-            android:inputType="text"
-            android:hint="Image URL"/>
-
-        <Button
-            android:id="@+id/button_submit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Submit" />
-
-        <Button
-            android:id="@+id/button_camera"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Camera" />
-
-        <ImageView
-            android:id="@+id/item_image"
-            android:scaleType="fitCenter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:layout_marginBottom="5dp"
-            />
-
-    </LinearLayout>
         <Button
             android:id="@+id/button_upload"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:text="Upload"/>
 
 
+        <RelativeLayout
+            android:id="@+id/lgtm_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/item_image"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/lgtm_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/item_image"
+                android:layout_alignTop="@+id/item_image"
+                android:layout_alignRight="@+id/item_image"
+                android:layout_alignBottom="@+id/item_image"
+                android:layout_margin="20dp"
+                android:gravity="bottom|left"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:text="LGTM!"
+                android:textColor="#FFFFFF"
+                android:shadowColor="#000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="3"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/button_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Camera" />
 
 </RelativeLayout>
