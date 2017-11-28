@@ -25,21 +25,18 @@
 
         <activity
             android:name=".ItemActivity">
-
             <intent-filter android:label="@string/app_name" android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <!-- カスタムスキーム: lgtm://item/234 -->
-                <data android:scheme="lgtm" android:host="item" />
+                <data android:scheme="https" android:host="lgtm.lol"></data>
             </intent-filter>
 
-            <intent-filter android:label="@string/app_name" android:autoVerify="true">
-                <action android:name="android.intent.action.VIEW"></action>
-                <category android:name="android.intent.category.DEFAULT"></category>
-                <category android:name="android.intent.category.BROWSABLE"></category>
-                <!-- HTTPスキーム: https://lgtm.lol/i/234 -->
-                <data  android:scheme="https" android:host="lgtm.lol" android:pathPrefix="/i/"></data>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="lgtm" android:host="item" />
             </intent-filter>
 
         </activity>
