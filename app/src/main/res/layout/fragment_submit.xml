@@ -23,6 +23,7 @@
             android:id="@+id/lgtm_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="5dp"
             >
 
             <ImageView
@@ -30,8 +31,6 @@
                 android:scaleType="fitXY"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="5dp"
-                android:src="@android:drawable/ic_menu_camera"
                 />
 
             <TextView
@@ -57,8 +56,6 @@
         </RelativeLayout>
 
     </LinearLayout>
-
-
 
     <Button
         android:id="@+id/button_camera"
