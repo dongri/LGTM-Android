@@ -16,6 +16,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
@@ -80,7 +81,8 @@ public class ItemActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject jsonObject) {
                         try {
-                            String url = jsonObject.getString("url");
+                            JSONObject jsonItem = jsonObject.getJSONObject("item");
+                            String url = jsonItem.getString("url");
                             imageView.setImageUrl(url, Controller.getPermission().getImageLoader());
                         } catch (Exception e) {
                             Toast.makeText(getApplicationContext(), e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
